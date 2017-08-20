@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html ng-app="txt-portal">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./js/vendors/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/vendors/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:600|Poppins:400,700" rel="stylesheet" />
+    <link rel="icon" type="img/jpg" href="./img/Favicon.png">
+    <title>TXT Labs - Portfolio</title>
+</head>
+
+<body>
+     <nav class="nav has-shadow nav-fixed-top" ng-controller="navCtrl" style="top: 0px;">
+
+    <div class="nav-left">
+      <a href="./index.html" class="nav-item logo-link">
+        <img src="./img/logo.png" alt="Bulma logo" height="80" width="180">
+      </a>
+  </div>
+  <div class="nav-center hide"> 
+  <a href="./index.html" class="nav-item is-tab is-hidden-mobile carousel-links">home</a>
+                <a href="./services.html" class="nav-item is-tab is-hidden-mobile carousel-links">services</a>
+                <a href="./portfolio.html" class="nav-item is-tab is-hidden-mobile carousel-links active">portfolio</a>
+                <a href="./impact.html" class="nav-item is-tab is-hidden-mobile carousel-links">impact</a>
+                <a href="./our-team.html" class="nav-item is-tab is-hidden-mobile carousel-links">our team</a>
+                <a href="./contact-us.html" class="nav-item is-tab is-hidden-mobile carousel-links">contact us</a>
+
+  </div>
+ <!--  <div class="nav-center-upper-links hide">
+      <div class="media-links">
+          <a class="carousel-links"><i class="fa fa-facebook fa-lg"></i></a>
+          <a class=" carousel-links"><i class="fa fa-twitter "></i></a>
+          <a class=" carousel-links "><i class="fa fa-linkedin fa-3x"></i></a></a>
+          <a class=" carousel-links "><i class="fa fa-youtube fa-2x "></i></a></a>
+      </div> -->
+      <!-- <div class="media-links-divider">
+          <span class="line-box"></span>
+          <span class="line"></span>
+          <span class="line-box"></span> -->
+          <!-- <div class="line-box">
+
+          </div>
+          <div class="line">
+
+          </div>
+          <div class="line-box">
+
+          </div> -->
+      </div>
+  </div>
+  <span class="nav-toggle" ng-click="active = !active" ng-class="{'is-active':active}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu not-visible animated fadeInDown" ng-class="{'is-active':active}">
+    <a href="index.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >home</a>
+      <a href="services.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >services</a>
+      <a href="portfolio.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >portfolio</a>
+      <a href="impact.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >impact</a>
+      <a href="our-team.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >our team</a>
+      <a href="contact-us.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >contact us</a>
+    </div>
+</nav>
+<div class="page animated fadeIn">
+<div class="img-container4">
+    <div class="main-title">
+        <p class="p1">Portfolio</p>
+    </div>
+</div>
+
+<div class="mainContainer">
+<div class="our-principles">
+<center>
+    <div class="principles-title sub-title">
+        Clients
+    </div>
+    </center>
+<div class="words">
+  <p class="cambria bottom">We provide outstanding service and exceptional value to businesses for web & mobile app development, IT consulting services, and Educational consulting. Our team is committed to improving your organization’s efficiency and profitability through innovative technology and our extensive expertise in the tech and educational sectors.</p>
+  
+</div>
+</div>
+</div>
+<center>
+
+
+
+
+ <script src="js/jssor.slider-25.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $AutoPlaySteps: 4,
+              $SlideDuration: 160,
+              $SlideWidth: 200,
+              $SlideSpacing: 3,
+              $Cols: 5,
+              $Align: 390,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 5
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 980);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        .jssorb057 .i {position:absolute;cursor:pointer;}
+        .jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+        .jssorb057 .i:hover .b {stroke-opacity:.7;}
+        .jssorb057 .iav .b {stroke-opacity: 1;}
+        .jssorb057 .i.idn {opacity:.3;}
+
+        .jssora073 {display:block;position:absolute;cursor:pointer;}
+        .jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+        .jssora073:hover {opacity:.8;}
+        .jssora073.jssora073dn {opacity:.4;}
+        .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:150px;overflow:hidden;visibility:hidden;">
+        
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1500px;height:150px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="./img/PartnerLogo1.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo2.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo3.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo4.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo5.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo6.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo7.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo8.png" />
+            </div>
+            <div>
+                <img data-u="image" src="./img/PartnerLogo9.png" />
+            </div>
+           
+            <a data-u="any" href="https://www.jssor.com" style="display:none">bootstrap slider</a>
+        </div>
+        
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+
+
+
+
+
+
+</center>
+<div class="mainContainer">
+<div class="our-principles">
+<center>
+    <div class="principles-title sub-title">
+        Testimonials
+    </div>
+    </center>
+<div class="words">
+  <p class="cambria">"One of TXT Labs' most impressive attributes are their breadth of knowledge. Not only does they possess an in-depth knowledge of the ins and outs of development, but they are equally proficient with Unix, NT, and AS/400 Operating Systems, as well as databases like Oracle and MS SQL, and MongoDB. Their knowledge combined with excellent problem solving skills allowed them to quickly adapt to any situation and provide timely and accurate solutions. I strongly recommend TXT Labs for any IT and development related consulting."<span class="Company"></span></p>
+  <br>
+  <p class="cambria">"TXT Labs has brought a lot of value to our business through their custom training sessions. They tailored their presentations to address our specific process issues and questions. We have especially found that they are great at matching up the true potential of BI with the real life business challenges that are not textbook or white paper issues." <span class="Company"></span></p>
+  <br>
+  <p class="paragraphPadding cambria">"I was extremely pleased with the design consultant provided by TXT Labs. They brought the optimal mix of design and UX knowledge and real world experience. He asked the right probing questions and really listened to our answers to ensure that he was meeting our needs." <span class="Company"></span></p>
+  
+</div>
+</div>
+</div>
+<center>
+    <div class="principles-title sub-title">
+        Featured On
+    </div>
+</center>
+<br>
+<br>
+<center>
+<div class="columns press">
+  <div class="column is-one-quarter">
+  <img src="./img/fox.jpg" height="200" width="300">
+  </div>
+ 
+ <div class="column is-one-quarter">
+  <img src="./img/nbc.png" height="100" width="200">
+  </div>
+
+<div class="column is-one-quarter">
+ <img src="./img/tedx.png" height="200" width="300">
+  </div>
+
+  <div class="column is-one-quarter">
+  <img src="./img/sxsw.png" height="200" width="300">
+  </div>
+</div>
+</center>
+
+<div class="mainContainer">
+<div class="our-principles">
+<center>
+    <div class="principles-title sub-title">
+        Partners in innovation
+    </div>
+    </center>
+</div>
+</div>
+
+<!-- the logos -->
+<center>
+<div class="theWholeThing">
+<div class="picture">
+<img id="v-image" src="img/tinder.png" class="attachment-full size-full" alt="ideation">    </div>
+
+
+<div class="picture">
+<img id="v-image" src="img/snapchat.png" alt="design">    </div>
+
+
+<div class="picture">
+<img id="v-image" src="img/facebook2.png" alt="development">  </div>
+
+
+<div class="picture">
+<img id="v-image" src="img/google.png" alt="marketing-pr"></div>
+
+
+<div class="picture">
+<img id="v-image" src="img/honda.png" alt="launch">    </div>
+
+
+<div class="picture">
+<img id="v-image" src="img/lakers.png" alt="mesure-update"></div>
+
+<div class="picture">
+<img id="v-image" src="img/usc.png" alt="launch"></div>
+
+
+<div class="picture">
+<img id="v-image" src="img/subaru.png" alt="mesure-update"></div>
+
+<div class="picture">
+<img id="v-image" src="img/verizon.png" alt="launch">    </div>
+
+
+<div class="picture">
+<img id="v-image" src="img/shave.png" alt="mesure-update"></div>
+
+<div class="picture">
+<img id="v-image" src="img/edison.png" alt="launch"></div>
+
+
+<div class="picture">
+<img id="v-image" src="img/good.png" alt="mesure-update"></div>
+</div>
+</center>
+
+
+<div class="footer">
+<center>
+<div class="columns columnStyle2" style="
+    padding-bottom: 0px;">
+<div class="column is-one-third columnStyle">
+&copy; 2017 txt labs all rights reserved
+  </div>
+  <div class="column is-one-third columnStyle">
+  <a href="https://www.facebook.com/txtlabs/"><img class="media" src="img/facebook.png" align="bottom"></a>
+  <a href="https://twitter.com/Txt_Labs"><img class="media" src="img/twitter.png" align="bottom"></a>
+  <a href="https://www.linkedin.com/company/txtlabs"><img class="media" src="img/linkedin.png" align="bottom"></a>
+  <a href="https://www.instagram.com/txt_labs/"><img class="media" src="img/instagram.png" align="bottom"></a>
+  </div>
+  
+  </div>
+</center>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+<script src="./js/app.js"></script>
+<script src="./js/vendors/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script src="./js/methods.js"></script>
+<script src="./js/controllers/navCtrl.js"></script>
+</body>
+
+</html>

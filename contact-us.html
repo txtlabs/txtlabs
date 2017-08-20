@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html ng-app="txt-portal">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:600|Poppins:400,700" rel="stylesheet" />
+    <link rel="icon" type="img/jpg" href="./img/Favicon.png">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <title>TXT Labs - Contact Us</title>
+</head>
+
+<body>
+    <nav class="nav has-shadow nav-fixed-top" ng-controller="navCtrl" style="top: 0px;">
+
+    <div class="nav-left">
+      <a href="./index.html" class="nav-item logo-link">
+        <img src="./img/logo.png" alt="Bulma logo" height="80" width="180">
+      </a>
+  </div>
+  <div class="nav-center hide"> 
+  <a href="./index.html" class="nav-item is-tab is-hidden-mobile carousel-links">home</a>
+                <a href="./services.html" class="nav-item is-tab is-hidden-mobile carousel-links">services</a>
+                <a href="./portfolio.html" class="nav-item is-tab is-hidden-mobile carousel-links">portfolio</a>
+                <a href="./impact.html" class="nav-item is-tab is-hidden-mobile carousel-links">impact</a>
+                <a href="./our-team.html" class="nav-item is-tab is-hidden-mobile carousel-links">our team</a>
+                <a href="./contact-us.html" class="nav-item is-tab is-hidden-mobile carousel-links active">contact us</a>
+
+  </div>
+  
+          <!-- <div class="line-box">
+
+          </div>
+          <div class="line">
+
+          </div>
+          <div class="line-box">
+
+          </div> -->
+      </div>
+  </div>
+  <span class="nav-toggle" ng-click="active = !active" ng-class="{'is-active':active}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu not-visible animated fadeInDown" ng-class="{'is-active':active}">
+    <a href="index.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >home</a>
+      <a href="services.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >services</a>
+      <a href="portfolio.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >portfolio</a>
+      <a href="impact.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >impact</a>
+      <a href="our-team.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >our team</a>
+      <a href="contact-us.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >contact us</a>
+    </div>
+</nav>
+<div class="page animated fadeIn">
+<div class="img-container3">
+    <div class="main-title">
+        <p class="p1">contact us</p>
+    </div>
+</div>
+
+<center ng-controller="contactCtrl">
+<div class="contactInfo">
+<h1 class="contactIntro123 ">LET'S WORK TOGETHER TO BUILD INNOVATIVE PRODUCTS </h1>
+<h4 class="contactIntro2 cambria">We are always open and available to help answer your questions and provide more information. <br> Let's work together and build innovative products.</h4>
+<div class="blueBorder2"></div>
+<form ng-submit="saveRecord()">
+          <input class="identity" type="text" placeholder="Full Name" ng-model="record.fullname" required>
+          <br>
+          <input class="email" type="email" placeholder="Email" ng-model="record.email" required>
+          <input class="phone" type="phone" placeholder="Phone" ng-model="record.phone" required>
+          <br>
+          <textarea class="describe"  rows="4" cols="50" placeholder="Describe Your Organization and Your Project" ng-model="record.description" required></textarea>
+          <br>
+          <select class="budget" ng-model="record.budget" required>
+          <option value="">Your Expected Budget</option>
+          <option value="$25001 - $50000">$25001 - $50000</option>
+          <option value="$50001+">$50001 - $100000</option>
+          <option value="$50001+">$100001 - $200000</option>
+          <option value="$50001+">$200001+</option>
+        </select>
+        <input style="display:block" class="submit hvr-grow" type="submit" value="Submit Project" >
+</form>
+
+
+</div>
+</center>
+
+
+<center>
+<div class="blueBorder"></div>
+
+
+<div class="columns">
+  <div class="column is-one-third">
+  <a href="mailto:contactus@txtlabs.io" class="link2">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/mail.png" height="100" width="100">
+    </div>
+    <div class="name">
+      <h5 class="name">Email</h5>
+    </div>
+    <div class="position">
+      <h5>contactus@txtlabs.io</h5>
+    </div></a>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div>
+
+
+  <div class="column is-one-third">
+  <a href="tel:+3232404737" class="link2">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/phone.png" height="100" width="100">
+    </div>
+    <div class="name">
+      <h5 class="name">Phone Number</h5>
+    </div>
+    <div class="position">
+      <h5>(323) 240-4737</h5>
+    </div></a>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div>
+
+
+  <div class="column is-one-third">
+  <a href="https://www.google.com/maps/place/Mercado+La+Paloma/@34.0172678,-118.2793683,18z/data=!4m5!3m4!1s0x0:0xf61c9468473317a0!8m2!3d34.0173157!4d-118.2783043">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/office.png" height="100" width="100">
+    </div>
+    </a>
+    <div class="name">
+      <h5 class="name">Office</h5>
+    </div>
+    <div class="position">
+      <h5>3655 South Grand Ave.,<br>
+      Los Angeles, CA 90007 Ste. 220</h5>
+    </div>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div>
+</div>
+
+
+<div class="columns contact">
+  <div class="column is-one-quarter">
+  <a href="https://www.facebook.com/txtlabs/" target="_blank"><div class="socialMedia">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/facebook.png" height="100" width="100">
+    </div>
+    <div class="name">
+      <h5 class="name">Facebook</h5>
+    </div>
+    <div class="position1">
+      <h5>@txtlabs</h5>
+    </div>
+    </div></a>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div></a>
+
+
+
+  <div class="column is-one-quarter">
+  <a href="https://twitter.com/Txt_Labs" target="_blank"><div class="socialMedia">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/twitter.png" height="100" width="100">
+    </div>
+    <div class="name">
+      <h5 class="name">Twitter</h5>
+    </div>
+    <div class="position1">
+      <h5>@txtlabs</h5>
+    </div>
+    </div></a>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div>
+
+
+  <div class="column is-one-quarter">
+  <a href="https://www.linkedin.com/company/txtlabs" target="_blank"><div class="socialMedia">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/linkedin.png" height="100" width="100">
+    </div>
+    <div class="name">
+      <h5 class="name">LinkedIn</h5>
+    </div>
+    <div class="position1">
+      <h5>linkedin.com/in/TXTLabs/</h5>
+    </div>
+    </div></a>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div>
+   <div class="column is-one-quarter">
+  <a href="https://www.instagram.com/txt_labs/" target="_blank"><div class="socialMedia">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/instagram.png" height="100" width="100">
+    </div>
+    <div class="name">
+      <h5 class="name">Instagram</h5>
+    </div>
+    <div class="position1">
+      <h5>linkedin.com/in/TXTLabs/</h5>
+    </div>
+    </div></a>
+    <!-- <div class="bio">
+      <a href="#"><i class="fa fa-twitter icon7"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-lg icon7"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x icon7"></i></a>
+      <p>Read full bio</p>
+    </div> -->
+  </div>
+</div> 
+</center>
+
+
+<div class="footer">
+<center>
+<div class="columns columnStyle2" style="
+    padding-bottom: 0px;" >
+<div class="column is-one-third columnStyle">
+&copy; 2017 txt labs all rights reserved
+  </div>
+  <div class="column is-one-third columnStyle">
+  <a href="https://www.facebook.com/txtlabs/" target="_blank"><img class="media" src="img/facebook.png" align="bottom"></a>
+  <a href="https://twitter.com/Txt_Labs" target="_blank"><img class="media" src="img/twitter.png" align="bottom"></a>
+  <a href="https://www.linkedin.com/company/txtlabs" target="_blank"><img class="media" src="img/linkedin.png" align="bottom"></a>
+  <a href="https://www.instagram.com/txt_labs/" target="_blank"><img class="media" src="img/instagram.png" align="bottom"></a>
+  </div>
+  </div>
+</center>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+<script src="./js/app.js"></script>
+<script src="./js/vendors/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script src="./js/methods.js"></script>
+<script src="./js/controllers/navCtrl.js"></script>
+</body>
+
+</html>

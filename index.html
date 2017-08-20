@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html ng-app="txt-portal" class="homePage">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./js/vendors/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/vendors/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:600|Poppins:400,700" rel="stylesheet" />
+    <link rel="icon" type="img/jpg" href="./img/Favicon.png">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    
+    <title>TXT Labs - Home</title>
+</head>
+
+<body class="page animated fadeIn">
+    <nav class="nav has-shadow nav-fixed-top" ng-controller="navCtrl">
+
+    <div class="nav-left">
+      <a href="./index.html" class="nav-item logo-link">
+        <img src="./img/logo.png" alt="Bulma logo" height="80" width="180">
+      </a>
+  </div>
+  <div class="nav-center hide"> 
+                <a href="./index.html" class="nav-item is-tab is-hidden-mobile carousel-links active">home</a>
+                <a href="./services.html" class="nav-item is-tab is-hidden-mobile carousel-links">services</a>
+                <a href="./portfolio.html" class="nav-item is-tab is-hidden-mobile carousel-links">portfolio</a>
+                <a href="./impact.html" class="nav-item is-tab is-hidden-mobile carousel-links">impact</a>
+                <a href="./our-team.html" class="nav-item is-tab is-hidden-mobile carousel-links">our team</a>
+                <a href="./contact-us.html" class="nav-item is-tab is-hidden-mobile carousel-links">contact us</a>
+
+  </div>
+ 
+          <!-- <div class="line-box">
+
+          </div>
+          <div class="line">
+
+          </div>
+          <div class="line-box">
+
+          </div> -->
+      </div>
+  </div>
+  <span class="nav-toggle" ng-click="active = !active" ng-class="{'is-active':active}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu not-visible animated fadeInDown" ng-class="{'is-active':active}">
+    <a href="index.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >home</a>
+      <a href="services.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >services</a>
+      <a href="portfolio.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >portfolio</a>
+      <a href="impact.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >impact</a>
+      <a href="our-team.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >our team</a>
+      <a href="contact-us.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >contact us</a>
+    </div>
+
+</nav>
+<main class="cd-main-content">
+    <div class="cd-fixed-bg cd-bg-1">
+      <h1><center>
+<div class="introBox">
+<div class="name1">
+    Innovative Solutions
+</div>
+<div class="line2"></div>
+<div class="name2">
+    Quality Services
+</div>
+</div>
+</center></h1>
+    </div> <!-- cd-fixed-bg -->
+
+    
+    <div class="cd-fixed-bg cd-bg-2">
+      <h1><div class="services">
+    <div class="services-title sub-title name1">
+        Services
+    </div>
+    <center>
+    <div class="line2 lineStyles"></div>
+    <div class="columns">
+    <div class="column img3">
+            <a href="services.html#a1" target="_self"><img class="icon hvr-grow" src="./img/software.png" height="100" width="100"></a>
+            <p>software <br>services</p>
+        </div>
+    <div class="column img3">
+            <a href="services.html#a2" target="_self"><img class="icon hvr-grow" src="./img/it.png" height="100" width="100"></a>
+            <p>IT<br>consulting</p>
+        </div>
+        <div class="column img3">
+            <a href="services.html#a3" target="_self"><img class="icon hvr-grow" src="./img/education.png" height="100" width="100"></a>
+            <p>STEM<br>education <br>consulting</p>
+        </div>
+    </div>
+</div>
+</center></h1>
+    </div> <!-- cd-fixed-bg -->
+
+    
+
+    <a href="impact.html"><div class="cd-fixed-bg cd-bg-3">
+      <h1><div class="social-impact">
+    <div class="social-impact-title sub-title name1">
+        social impact
+    </div>
+     <center>
+    <div class="line2 lineStyles2"></div>
+    <p class="back">Our profits go back into the community and fund our nonprofit Teens Exploring Technology,
+        which provides coding leadership academies to inner city youth.
+        <br>
+    <img class="txt hvr-grow" src="./img/txt.png" height="100" width="100">
+    </center>
+    </p>
+    </div> 
+    </h1>
+    </div> <!-- cd-fixed-bg --></a>
+
+
+
+    <div class="cd-fixed-bg cd-bg-4">
+      <h1> <div class="footer">
+<center>
+<div class="columns columnStyle2" style="
+    padding-bottom: 0px;">
+<div class="column is-one-third columnStyle">
+&copy; 2017 txt labs all rights reserved
+  </div>
+  <div class="column is-one-third columnStyle">
+  <a href="https://www.facebook.com/txtlabs/"><img class="media" src="img/facebook.png" align="bottom"></a>
+  <a href="https://twitter.com/Txt_Labs"><img class="media" src="img/twitter.png" align="bottom"></a>
+  <a href="https://www.linkedin.com/company/txtlabs"><img class="media" src="img/linkedin.png" align="bottom"></a>
+  <a href="https://www.instagram.com/txt_labs/"><img class="media" src="img/instagram.png" align="bottom"></a>
+  </div>
+  
+  </div>
+</center>
+</div>
+    </h1>
+    </div> <!-- cd-fixed-bg -->
+
+  </main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+<script src="./js/app.js"></script>
+<script src="./js/vendors/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script src="./js/methods.js"></script>
+<script src="./js/controllers/navCtrl.js"></script>
+</body>
+
+</html>

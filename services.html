@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html ng-app="txt-portal">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:600|Poppins:400,700" rel="stylesheet" />
+    <link rel="icon" type="img/jpg" href="./img/Favicon.png">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <title>TXT Labs - Services</title>
+</head>
+
+<body>
+   <nav class="nav has-shadow nav-fixed-top" ng-controller="navCtrl" style="top: 0px;">
+
+    <div class="nav-left">
+      <a href="./index.html" class="nav-item logo-link">
+        <img src="./img/logo.png" alt="Bulma logo" height="80" width="180">
+      </a>
+  </div>
+  <div class="nav-center hide"> 
+  <a href="./index.html" class="nav-item is-tab is-hidden-mobile carousel-links">home</a>
+                <a href="./services.html" class="nav-item is-tab is-hidden-mobile carousel-links active">services</a>
+                <a href="./portfolio.html" class="nav-item is-tab is-hidden-mobile carousel-links">portfolio</a>
+                <a href="./impact.html" class="nav-item is-tab is-hidden-mobile carousel-links">impact</a>
+                <a href="./our-team.html" class="nav-item is-tab is-hidden-mobile carousel-links">our team</a>
+                <a href="./contact-us.html" class="nav-item is-tab is-hidden-mobile carousel-links">contact us</a>
+
+  </div>
+  
+          <!-- <div class="line-box">
+
+          </div>
+          <div class="line">
+
+          </div>
+          <div class="line-box">
+
+          </div> -->
+      </div>
+  </div>
+  <span class="nav-toggle" ng-click="active = !active" ng-class="{'is-active':active}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu not-visible animated fadeInDown" ng-class="{'is-active':active}">
+    <a href="index.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >home</a>
+      <a href="services.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >services</a>
+      <a href="portfolio.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >portfolio</a>
+      <a href="impact.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >impact</a>
+      <a href="our-team.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >our team</a>
+      <a href="contact-us.html" class="nav-item is-tab is-hidden-desktop" ng-class="{'black':active}" >contact us</a>
+    </div>
+</nav>
+<div class="page animated fadeIn">
+<div class="img-container6">
+    <div class="main-title">
+        <p class="p1">Services</p>
+    </div>
+</div>
+<center>
+<div class="mainContainer2">
+<div class="principles-title sub-title">
+<div id="a1">
+   Software Services
+   </div>
+</div>
+</div>
+</center>
+
+<div class="mainContainer">
+
+<center>
+<div class="columns">
+<div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/mobile.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Mobile Development</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Experience perfectly designed, secure products using Objective C & Swift languages. Our app development studio is comprised of insightful leaders and experienced Silicon Valley engineers. Mobile App Development on iPhone and Android platforms enables intricate products with endless possibilities. </h5>
+    </div>
+   
+  </div>
+
+<div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/web.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Web</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Stunning websites, backend databases, and landing pages in PHP, HTML5, Ruby, Wordpress, and .NET</h5>
+    </div>
+  </div>
+
+  <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/customSoftware.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Custom Software Solutions</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>We work with your business to design and develop custom software from the ground up for your unique need</h5>
+    </div>
+  </div>
+
+  <!-- <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/cloud.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Cloud</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Ensure effective optimization of resources for your business, while allowing scalability and security for your products. Our AWS, Azure, and Google cloud consultants provide industry-leading expertise and support for your infrastructure needs.</h5>
+    </div>
+  </div> -->
+
+
+
+  <!-- <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/iot.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>IoT</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Connecting consumer electronics, devices, homes, cars and much more with advanced technology and powerful apps through our custom development solutions, to help you unlock the potential of the Internet of Things.</h5>
+    </div>
+  </div> -->
+
+</div>
+
+<div class="columns hi">
+<!-- <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow hvr-grow" src="./img/wearable.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Wearables</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Empowering the latest in fashion and tech with powerful, functional apps across industries and platforms. Extend your app features seamlessly to Apple Watch, Samsung Gear & other wearables.</h5>
+    </div>
+  </div> -->
+  
+
+  </div>
+</center>
+</div>
+
+
+
+
+<center>
+<div class="mainContainer2">
+<div class="principles-title sub-title">
+<div id="a2">
+   IT Consulting
+   </div>
+</div>
+</div>
+</center>
+
+
+<div class="mainContainer">
+
+<center>
+<div class="columns">
+<div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/softwareMain.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Hardware/Software Maintenance</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Receive expert assistance and technical support with selecting, implementing, and maintaining hardware and software, including System & Data Security measures. We work with you to understand your unique needs & identify how technology can help achieve your business goals.</h5>
+    </div>
+   
+  </div>
+
+
+  <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/quality.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Quality Assurance</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Advanced testing for a myriad of hardware and software solutions throughout the entire development cycle, with an emphasis on cost-effective budget allocation and resource planning. We offer a full-range of testing services, including Requirements analysis, Functional testing, Compatibility testing, Usability and GUI testing, and Automation testing.</h5>
+    </div>
+  </div>
+
+
+
+  <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/project.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Project Management</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>As your project management and strategy execution partner, we are passionate about applying integrated, innovative solutions to our clients' organizational strategic missions using dynamic talent and our wealth of experience with the most effective management techniques & technologies. We have a proven ability to deliver against business priorities ranging from organizational process improvements to successfully planning, monitoring, and controlling strategic projects.</h5>
+    </div>
+  </div>
+
+</div>
+
+<div class="columns">
+<!-- <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/innovation.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>Business Intelligence</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>We help implement professional and flexible BI applications with advanced functionality to help companies get deeper insights into their business performance that are crucial for informing business decisions. Our BI software solutions collect, process and store complex business data and include applications and systems for reporting, analysis, dashboarding, and data warehousing, and automation.</h5>
+    </div>
+  </div> -->
+  
+
+  <!-- <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/ux.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name">
+      <h5><b>UX/UI design & development</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>We specialize in creating and implementing exceptional user experiences, focusing on enhancing user satisfaction by optimizing usability, accessibility, and interactivity through rigorous attention to detail and an analytical approach. We integrate information, design, and technology to provide a seamless development process.</h5>
+    </div>
+  </div> -->
+
+
+  <!-- <div class="column is-one-third cambria">
+    <div class="person">
+      <img class="photo hvr-grow" src="./img/marketing.png" height="100" width="100">
+    </div>
+    <br>
+    <div class="name"> -->
+<!--     Marketing and Social Media
+ -->      <!-- <h5><b>Digital Marketing</b></h5>
+    </div>
+    <br>
+    <div class="position">
+      <h5>Our team of marketing experts work with you to develop your brand strategy and promote your product across multiple platforms, utilizing the latest in Ad-tech including data analytics, SEO/SEM, e-commerce, influencer and social media optimization. Our in-house research team provides real-time market insights, including focus group testing with a wide range of target demographics.</h5>
+    </div>
+  </div> -->
+
+
+
+  </div>
+</center>
+</div>
+
+
+
+
+<center>
+<div class="mainContainer2">
+<div class="principles-title sub-title">
+<div id="a3">
+  STEM Education Consulting
+  </div>
+</div>
+</div>
+</center>
+<center>
+<div class="principle">
+  <div class="pic">
+  <div class="hvr-grow">
+    <img src="./img/education.png" height="100" width="100">
+    </div>
+    </div>
+  <div class="bigbox">
+  <div class="letters cambria">
+   TXT Labs offers education consulting in the form of training workshops and curriculum development. More specifically, our training workshops include mobile hackathons, teacher training, certification courses, and professional development seminars. Our curriculum development includes licensed instructional material for teachers, School Districts, Charter Schools, Private Schools, etc. We also provide targeted learning modules and lesson plans designed for teachers and educators for use in their classrooms, derived from our award-winning TXT curriculum (Google Rise 2014).
+  </div>
+  </div>
+</div>
+</center>
+
+
+
+<!-- <div class="meat">
+    
+<div class="chunk">
+<div class="words">
+<div class="nombre">
+<img class="icon" src="./img/education.png" align="center">
+  <p class="b poppins">STEM Education Consulting</p>
+  </div>
+  <div class="cambria">
+  <p>TXT Labs offers education consulting in the form of training workshops and curriculum development. More specifically, our training workshops include mobile hackathons, teacher training, certification courses, and professional development seminars. Our curriculum development includes licensed instructional material for teachers, School Districts, Charter Schools, Private Schools, etc. We also provide targeted learning modules and lesson plans designed for teachers and educators for use in their classrooms, derived from our award-winning TXT curriculum (Google Rise 2014).</p>
+  </div>
+</div>
+</div>
+</div> -->
+
+<div class="footer">
+<center>
+<div class="columns columnStyle2" style="
+    padding-bottom: 0px;">
+<div class="column is-one-third columnStyle">
+&copy; 2017 txt labs all rights reserved
+  </div>
+  <div class="column is-one-third columnStyle">
+  <a href="https://www.facebook.com/txtlabs/"><img class="media" src="img/facebook.png" align="bottom"></a>
+  <a href="https://twitter.com/Txt_Labs"><img class="media" src="img/twitter.png" align="bottom"></a>
+  <a href="https://www.linkedin.com/company/txtlabs"><img class="media" src="img/linkedin.png" align="bottom"></a>
+  <a href="https://www.instagram.com/txt_labs/"><img class="media" src="img/instagram.png" align="bottom"></a>
+  </div>
+  
+  </div>
+</center>
+</div>
+</div>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js">
+
+</script>
+<script src="./js/controllers/navCtrl.js"></script>
+<script src="./js/app.js"></script>
+</body>
+
+</html>
